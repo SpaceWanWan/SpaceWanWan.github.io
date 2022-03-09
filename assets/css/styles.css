@@ -14,9 +14,9 @@
         We Peep: hsl(10, 95, 92)
     */
 
-    --first-hue: 2;
-    --sat: 74%;
-    --lig: 59%;
+    --first-hue: 0;
+    --sat: 88%;
+    --lig: 77%;
     --second-hue: 0;
 
     --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
