@@ -9,23 +9,23 @@
     /*
         Cinnabar: hsl(2, 74, 59)
         Pink: hsl(359, 100, 91)
-        Wewak: hsl(0, 88, 77)
+            Wewak: hsl(0, 88, 77)
         Old lace: hsl(66, 85, 98)
-        We Peep: hsl(10, 95, 92)
+            We Peep: hsl(10, 95, 92)
     */
 
     --first-hue: 0;
-    --sat: 88%;
-    --lig: 77%;
+    --sat: 0%;
+    --lig: 50%;
     --second-hue: 0;
 
     --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-    --first-color-alt: hsl(var(--first-hue), var(--sat), 55%);
-    --title-color: hsl(var(--second-hue), 88%, 77%);
-    --text-color: hsl(var(--second-hue), 81%, 57%);
-    --text-color-light: hsl(var(--second-hue), 77%, 37%);
-    --body-color: hsl(var(--second-hue), 98%, 7%);
-    --container-color: hsl(var(--second-hue), 92%, 12%);
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 98%);
+    --title-color: hsl(var(--second-hue), 0%, 95%);
+    --text-color: hsl(var(--second-hue), 0%, 75%);
+    --text-color-light: hsl(var(--second-hue), 0%, 55%);
+    --body-color: hsl(var(--second-hue), 0%, 0%);
+    --container-color: hsl(var(--second-hue), 0%, 12%);
 
     /*Font*/
     --body-font: 'Barlow', sans-serif;
@@ -173,7 +173,7 @@ img{
 .nav_menu{
     position: fixed;
     bottom: 1rem;
-    background-color: hsl(var(--second-hue), 88%, 77%, .8);
+    background-color: hsl(var(--second-hue), 0%, 77%, .8);
     width: 90%;
     border-radius: 4rem;
     padding: 1rem 2.25rem;
