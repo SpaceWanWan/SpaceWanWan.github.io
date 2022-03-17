@@ -1,2 +1,161 @@
-/*Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,800&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+* {box-sizing: border-box;
+    margin: 0;}
+    
+body {    
+    font-family: 'Source Sans Pro', sans-serif;
+    background: url(https://images.pexels.com/photos/3389817/pexels-photo-3389817.jpeg?cs=srgb&dl=pexels-airam-datoon-3389817.jpg&fm=jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header{
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, .2);    
+    padding: 10px 10px;
+    position: sticky;
+    transition: 0.3s;
+}
+
+.header a{
+    float: left;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+  
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4{
+    color: white;
+    text-align: center;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.header a.active {
+    background-color: rgb(0, 0, 0, .5);
+    color: white;
+}
+  
+.header-right {
+    float: right;
+}
+  
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;    
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.section{
+    padding: 2rem 0 1rem;
+}
+
+.section_title,
+.section_subtitle{
+    text-align: center;
+}
+
+.section_title{
+    margin-bottom: 2rem;
+}
+
+.section_subtitle{
+    display: block;
+}
+
+.container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.home_intro{
+    color: white;
+    text-align: center;
+}
+
+.home_name{
+    font-size: 600;
+}
+
+.home_education{
+    font-size: 400;
+}
+
+.home_button{
+    align-items: center;
+    text-align: center;
+}
+
+.button_about{
+    color: white;
+}
+
+.home_handle{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+    width: 190px;
+    height: 290px;
+}
+
+.home_img{
+    width: 160px;    
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+}

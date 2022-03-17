@@ -13,12 +13,81 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,800&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 
     <title>SpaceWanWan</title>
 </head>
 <body>
-    <h1>Remaking page ...</h1>
-    <h2>Coming back soon as posible</h2>
+    <!-- Navbar-->
+    <header class="header" id="navbar">
+        <a href="#" class="name">SpaceWanWan</a>            
+        <div class="header-right">
+            <a href="#home" class="active">Home</a>
+            <a href="#about" class="about">About</a>
+            <a href="#portfolio" class="portfolio">Portfolio</a>
+            <a href="#contact" class="contact">Contact</a>            
+        </div>
+    </header>
+    
+    <!--Main-->
+    <main class="main">
+        <!--Home-->
+        <section class="home section" id="home">
+            <div class="home_data section grid">
+                <span class="home_intro">Hello, I'm</span>
+                <h1 class="home_name">Uriel Alanis</h1>
+                <h3 class="home_education">Backend Developer</h3>
+
+                <div class="home_button">
+                    <a href="#about" class="button_about">About me</a>
+                </div>
+            </div>
+
+            <div class="home_handle">
+                <img src="assets/img/favicon-32x32.png" alt="" class="home_img">
+            </div>
+        </section>
+
+        <!--About-->
+        <section class="home section" id="about">
+            <span class="section_subtitle">Myself</span>
+            <h2 class="section_title">About Me</h2>
+
+            <div class="about_container container grid">
+                <img src="assets/img/favicon-32x32.png" alt="" class="about_img">
+                <div class="about_box">
+                    <h3 class="about_title">Experience</h3>
+                    <span class="about_subtitle">1 Year freelancer</span>
+                </div>
+
+                <div class="about_box">
+                    <h3 class="about_title">Projects</h3>
+                    <span class="about_subtitle">AI projects</span>
+                </div>
+
+                <div class="about_box">
+                    <h3 class="about_title">Support</h3>
+                    <span class="about_subtitle">Online</span>
+                </div>
+            </div>
+        </section>
+
+        <!--Portfolio-->
+        <section class="portfolio section" id="portfolio">
+
+        </section>
+
+        <!--Contact-->
+        <section class="contact section" id="contact">
+
+        </section>
+    </main>
+    
     <script src="assets/js/main.js"></script>
+
 </body>
 </html>
