@@ -24,17 +24,18 @@
 <body>    
     <h1>Web update in progress</h1>
     <!-- Navbar-->
-    <div id="container-toggle">
-        <div class="toggle"></div>
-    </div>
-    <header class="header" id="navbar">
-        <a href="#" class="name">Uriel Alanis</a>            
-        <div class="header-right">
-            <a href="#home" class="active">Home</a>
-            <a href="#about" class="about">About</a>
+    
+    <header class="header" id="navbar">        
+        <a id="container-toggle">
+            <button class="toggle" type="button" title="Change Dark/Light mode">
+                <i class='bx bxs-sun bx-sm'></i>
+            </button>
+        </a>        
+        <a href="#about" class="name">Uriel Alanis</a>            
+        <div class="header-right">                        
             <a href="#skills" class="about">Skills</a>
             <a href="#portfolio" class="portfolio">Portfolio</a>
-            <a href="#contact" class="contact">Contact</a>            
+            <a href="#contact" class="contact">Contact</a>        
         </div>
     </header>
     
@@ -43,13 +44,9 @@
         <!--Home-->
         <section class="home section" id="home">
             <div class="home_data section grid">
-                <span class="home_intro">Hello, I'm</span>
+                <h3 class="home_intro">Hello, I'm</h3>
                 <h1 class="home_name">Uriel Alanis</h1>
                 <h3 class="home_education">Backend Developer</h3>
-
-                <div class="home_button">
-                    <a href="#about" class="button_about">About me</a>
-                </div>
             </div>
 
             <div class="home_handle">
@@ -58,22 +55,24 @@
 
             <div class="home_social">
                 <a href="https://github.com/SpaceWanWan" class="home_social-link">
-                    <i class='bx bxl-github'></i>
+                    <i class='bx bxl-github bx-sm'></i>
                 </a>
 
                 <a href="https://www.linkedin.com/in/uriel-alanis/" class="home_social-link">
-                    <i class='bx bxl-linkedin-square' ></i>
+                    <i class='bx bxl-linkedin-square bx-sm' ></i>
                 </a>
-
-                <a href="" class="home_social-link">
-                    <i class='bx bxs-user'></i>
+                <a onclick="mailFunction()" class="home_social-link" title="uriel_alanismoreno@hotmail.com">
+                    <i class='bx bx-envelope bx-sm'></i>
                 </a>
             </div>
+            <span id="snackbar">Mail copied to clipboard
+                <i class='bx bx-check-circle'></i>
+            </span>
         </section>
 
         <!--About-->
         <section class="home section" id="about">
-            <span class="section_subtitle">Myself</span>
+            <h4 class="section_subtitle">Myself</h4>
             <h2 class="section_title">About Me</h2>
 
             <div class="about_container container grid">
@@ -171,7 +170,7 @@
                 </div>
 
                 <div class="skills_content">
-                    <h3 class="skills_title">Backend developer</h3>
+                    <h3 class="skills_title">Frontend developer</h3>
 
                     <div class="skills_box">
                         <div class="skills_group">
@@ -197,7 +196,7 @@
                                 <i class='bx bxs-badge-check'></i>
 
                                 <div>
-                                    <h3 class="skills_name">CSS</h3>
+                                    <h3 class="skills_name">CSS</h3>                                    
                                     <span class="skills_level">Intermediate</span>
                                 </div>
                             </div>
@@ -313,10 +312,9 @@
                     <h3 class="contact_title">Talk to me</h3>
 
                     <div class="contact_info">
-                        <div class="contact_card">
-                            <i class='bx bxs-envelope' ></i>
+                        <div class="contact_card">                            
                             <h3 class="contact_card-title">Email</h3>
-                            <span class="contact_card-data">uriel_alanismoreno@hotmail.com</span>
+                            <h4 class="contact_card-data">uriel_alanismoreno@hotmail.com</h4>
                         </div>
                     </div>
                 </div>
@@ -330,8 +328,8 @@
     
     <script src="assets/js/mixitup.min.js"></script>
 
-    <script scr="assets/js/toggle.js"> </script>
-
+    <script src="assets/js/toggle.js"></script>
+    
     <script src="assets/js/main.js"></script>
 
 </body>

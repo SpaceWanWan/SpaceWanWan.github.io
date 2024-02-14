@@ -27,15 +27,15 @@ function activeWork(){
 
 linkWork.forEach(l=> l.addEventListener('click', activeWork))
 
-const toggle = document.getElementById('toggle');
-const body = document.body;
+function mailFunction(){
+  var copyText = "uriel_alanismoreno@hotmail.com";
 
-toggle.addEventListener('input', e => {
-    const isChecked = e.target.checked;
+  navigator.clipboard.writeText(copyText);
 
-    if (isChecked) {
-        body.classList.add('white-theme');
-    } else {
-        body.classList.remove('white-theme');
-    }
-});
+  var sb = document.getElementById("snackbar");
+
+  //this is where the class name will be added & removed to activate the css
+  sb.className = "show";
+
+  setTimeout(()=>{ sb.className = sb.className.replace("show", ""); }, 3000);
+}
