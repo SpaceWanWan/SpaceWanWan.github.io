@@ -26,3 +26,16 @@ function activeWork(){
 }
 
 linkWork.forEach(l=> l.addEventListener('click', activeWork))
+
+const toggle = document.getElementById('toggle');
+const body = document.body;
+
+toggle.addEventListener('input', e => {
+    const isChecked = e.target.checked;
+
+    if (isChecked) {
+        body.classList.add('white-theme');
+    } else {
+        body.classList.remove('white-theme');
+    }
+});

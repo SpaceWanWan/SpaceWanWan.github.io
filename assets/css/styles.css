@@ -5,9 +5,42 @@
     
 body {    
     font-family: 'Source Sans Pro', sans-serif;
-    background: url(https://images.pexels.com/photos/3389817/pexels-photo-3389817.jpeg?cs=srgb&dl=pexels-airam-datoon-3389817.jpg&fm=jpg);
-    background-size: cover;
-    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.99), rgb(30, 30, 30), rgb(0, 0, 0, 0.99));           
+    color: white;
+}
+
+.container-toggle {
+    background-color: #f8f8f8;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    box-shadow: inset 4px 4px 6px #cecece
+                inset -4px -4px 6px white;
+    border-radius: 25px;    
+    cursor: pointer;
+}
+
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: scale(.7);
+    background-color: linear-gradient(145deg, #D8D8D8, #FFFFFF);
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 8px #cecece
+                inset -3px -3px 8px white;
+
+}
+
+#container.active .toggle{
+    left: 40px;
+}
+
+body.active {
+    background-image: linear-gradient(rgb(255,255, 255, 0.99), rgb(225, 225, 225), rgb(255, 255, 255, 0.99));
+    color: black;
 }
 
 .header{
