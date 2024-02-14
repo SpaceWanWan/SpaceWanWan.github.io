@@ -29,13 +29,9 @@ linkWork.forEach(l=> l.addEventListener('click', activeWork))
 
 function mailFunction(){
   var copyText = "uriel_alanismoreno@hotmail.com";
-
   navigator.clipboard.writeText(copyText);
 
   var sb = document.getElementById("snackbar");
-
-  //this is where the class name will be added & removed to activate the css
   sb.className = "show";
-
   setTimeout(()=>{ sb.className = sb.className.replace("show", ""); }, 3000);
 }
